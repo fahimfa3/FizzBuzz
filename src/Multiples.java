@@ -1,6 +1,6 @@
 public class Multiples {
 
-    public static int main(Integer n, Integer a, Integer b) {
+    public static int multiples(int n, int a, int b) {
         int count = 0;
         for (int i = 1; i < n; ) {
             boolean divisibleBya = i % a == 0;
