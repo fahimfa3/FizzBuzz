@@ -1,20 +1,20 @@
 public class Multiples {
 
-    public static void main(String[] args) {
+    public static int main(Integer n, Integer a, Integer b) {
         int count = 0;
-        for (int i = 1; i < 1000; ) {
-            boolean divisibleBy3 = i % 3 == 0;
-            boolean divisibleBy5 = i % 5 == 0;
+        for (int i = 1; i < n; ) {
+            boolean divisibleBya = i % a == 0;
+            boolean divisibleByb = i % b == 0;
 
-            if (divisibleBy5) {
+            if (divisibleBya) {
                 count ++;
             }
-            else if (divisibleBy3) {
+            else if (divisibleByb) {
                 count ++;
             }
             i ++;
-    }
-        System.out.println(count);
+        }
+        return count;
 
 
     }
